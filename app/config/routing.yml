@@ -1,0 +1,19 @@
+pharmacie_personnage:
+    resource: "@PharmaciePersonnageBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pharmacie_produit:
+    resource: "@PharmacieProduitBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /admin
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

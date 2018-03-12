@@ -1,0 +1,3 @@
+pharmacie_personnage_homepage:
+    path:     /
+    defaults: { _controller: PharmaciePersonnageBundle:Default:index }

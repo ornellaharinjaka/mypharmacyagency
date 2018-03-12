@@ -1,0 +1,3 @@
+pharmacie_produit_homepage:
+    path:     /
+    defaults: { _controller: PharmacieProduitBundle:Default:index }
