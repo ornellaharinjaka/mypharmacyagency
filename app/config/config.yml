@@ -81,6 +81,10 @@ easy_admin:
             class: Pharmacie\PersonnageBundle\Entity\Sexe
         Statut: 
             class: Pharmacie\PersonnageBundle\Entity\Statut
+        ProduitCategories:
+            class: Pharmacie\ProduitBundle\Entity\ProduitCategories
+        Produits:
+            class: Pharmacie\ProduitBundle\Entity\Produits
 
 #FosUserbundle configuration
 fos_user:
