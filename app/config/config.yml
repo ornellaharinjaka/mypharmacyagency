@@ -85,6 +85,10 @@ easy_admin:
             class: Pharmacie\ProduitBundle\Entity\ProduitCategories
         Produits:
             class: Pharmacie\ProduitBundle\Entity\Produits
+        User:
+            class: AppBundle\Entity\User
+        Assurances:
+            class: Pharmacie\PersonnageBundle\Entity\Assurances
 
 #FosUserbundle configuration
 fos_user:

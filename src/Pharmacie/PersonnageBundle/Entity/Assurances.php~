@@ -1,0 +1,202 @@
+<?php
+
+namespace Pharmacie\PersonnageBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Assurances
+ *
+ * @ORM\Table(name="assurances")
+ * @ORM\Entity(repositoryClass="Pharmacie\PersonnageBundle\Repository\AssurancesRepository")
+ */
+class Assurances
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="numMatricule", type="integer")
+     */
+    private $numMatricule;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateNaissance", type="datetime")
+     */
+    private $dateNaissance;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateEmbauche", type="datetime")
+     */
+    private $dateEmbauche;
+
+    /**
+     * @ORM\OneToOne(targetEntity = Statut::class)
+     * @ORM\JoinColumn(name = "statut_client", referencedColumnName = "id")
+     */
+    private $statut;
+
+    /**
+     * @ORM\OneToOne(targetEntity = Sexe::class)
+     * @ORM\JoinColumn(name = "sexe_client", referencedColumnName = "id")
+     */
+    private $sexe;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set numMatricule
+     *
+     * @param integer $numMatricule
+     *
+     * @return Assurances
+     */
+    public function setNumMatricule($numMatricule)
+    {
+        $this->numMatricule = $numMatricule;
+
+        return $this;
+    }
+
+    /**
+     * Get numMatricule
+     *
+     * @return int
+     */
+    public function getNumMatricule()
+    {
+        return $this->numMatricule;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Assurances
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set prenom
+     *
+     * @param string $prenom
+     *
+     * @return Assurances
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    /**
+     * Get prenom
+     *
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * Set dateNaissance
+     *
+     * @param \DateTime $dateNaissance
+     *
+     * @return Assurances
+     */
+    public function setDateNaissance($dateNaissance)
+    {
+        $this->dateNaissance = $dateNaissance;
+
+        return $this;
+    }
+
+    /**
+     * Get dateNaissance
+     *
+     * @return \DateTime
+     */
+    public function getDateNaissance()
+    {
+        return $this->dateNaissance;
+    }
+
+    /**
+     * Set dateEmbauche
+     *
+     * @param \DateTime $dateEmbauche
+     *
+     * @return Assurances
+     */
+    public function setDateEmbauche($dateEmbauche)
+    {
+        $this->dateEmbauche = $dateEmbauche;
+
+        return $this;
+    }
+
+    /**
+     * Get dateEmbauche
+     *
+     * @return \DateTime
+     */
+    public function getDateEmbauche()
+    {
+        return $this->dateEmbauche;
+    }
+}
+
