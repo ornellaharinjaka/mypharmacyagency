@@ -54,6 +54,7 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         ),
         'N' => 
         array (
+            'Nelmio\\CorsBundle\\' => 18,
             'Negotiation\\' => 12,
         ),
         'M' => 
@@ -191,6 +192,10 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Nelmio\\CorsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nelmio/cors-bundle',
         ),
         'Negotiation\\' => 
         array (
