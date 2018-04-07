@@ -63,6 +63,7 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         'J' => 
         array (
             'JavierEguiluz\\Bundle\\EasyAdminBundle\\' => 37,
+            'JMS\\SerializerBundle\\' => 21,
         ),
         'I' => 
         array (
@@ -203,6 +204,10 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         array (
             0 => __DIR__ . '/..' . '/easycorp/easyadmin-bundle/legacy',
         ),
+        'JMS\\SerializerBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jms/serializer-bundle',
+        ),
         'Ivory\\JsonBuilder\\' => 
         array (
             0 => __DIR__ . '/..' . '/egeloen/json-builder/src',
@@ -283,9 +288,24 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         ),
         'P' => 
         array (
+            'PhpOption\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
+            ),
+            'PhpCollection' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpcollection/phpcollection/src',
+            ),
             'Pagerfanta\\' => 
             array (
                 0 => __DIR__ . '/..' . '/pagerfanta/pagerfanta/src',
+            ),
+        ),
+        'M' => 
+        array (
+            'Metadata\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/jms/metadata/src',
             ),
         ),
         'J' => 
@@ -293,6 +313,14 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
             'JsonpCallbackValidator' => 
             array (
                 0 => __DIR__ . '/..' . '/willdurand/jsonp-callback-validator/src',
+            ),
+            'JMS\\Serializer' => 
+            array (
+                0 => __DIR__ . '/..' . '/jms/serializer/src',
+            ),
+            'JMS\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/jms/parser-lib/src',
             ),
         ),
         'D' => 
