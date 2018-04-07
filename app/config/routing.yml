@@ -17,3 +17,7 @@ easy_admin_bundle:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+pharmacy_annotation:
+    resource: "@PharmacieProduitBundle/Controller/TestRestController.php"
+    type: annotation
