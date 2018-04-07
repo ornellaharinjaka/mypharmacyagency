@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Pharmacie\ProduitBundle\PharmacieProduitBundle(),
             new Pharmacie\PersonnageBundle\PharmaciePersonnageBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
