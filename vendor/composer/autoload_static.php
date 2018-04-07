@@ -52,6 +52,10 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
         ),
+        'N' => 
+        array (
+            'Negotiation\\' => 12,
+        ),
         'M' => 
         array (
             'Monolog\\' => 8,
@@ -70,6 +74,7 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         array (
             'Fig\\Link\\' => 9,
             'FOS\\UserBundle\\' => 15,
+            'FOS\\RestBundle\\' => 15,
         ),
         'E' => 
         array (
@@ -186,6 +191,10 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
+        'Negotiation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -213,6 +222,10 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
         'FOS\\UserBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
+        ),
+        'FOS\\RestBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/rest-bundle',
         ),
         'EasyCorp\\Bundle\\EasyAdminBundle\\' => 
         array (
@@ -273,6 +286,13 @@ class ComposerStaticInit43605105c7b1e2baeda178bd68b4d91a
             'Pagerfanta\\' => 
             array (
                 0 => __DIR__ . '/..' . '/pagerfanta/pagerfanta/src',
+            ),
+        ),
+        'J' => 
+        array (
+            'JsonpCallbackValidator' => 
+            array (
+                0 => __DIR__ . '/..' . '/willdurand/jsonp-callback-validator/src',
             ),
         ),
         'D' => 
